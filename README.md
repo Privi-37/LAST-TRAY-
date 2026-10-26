@@ -1,37 +1,45 @@
 # Last Tray
 
-**Good food. Good hands.** Last Tray is a food-rescue coordination prototype that makes the last mile of surplus food visible: what is available, who can collect it, and whether the handoff happened.
+**Good food. Good hands.** Last Tray is a food-rescue coordination prototype that helps communities make the last mile of surplus food visible: what is available, who can collect it, and whether the handoff happened.
 
-## The problem
+## Run the demo
 
-Surplus food is often time-sensitive. A donor may have safe food available for only a short pickup window, while a community group may not know what is nearby or have a clear way to coordinate collection. A listing alone does not prove the food was collected.
+Open `index.html` in a modern browser. There is no build step or account required. Posts and claimed pickups are stored in that browser's local storage, so they remain on that device and do not sync to another user or device.
 
-## The idea
+## What works in this prototype
 
-Last Tray connects three roles in one simple flow:
+- Browse sample food listings and filter by meals, produce, bakery, or dairy.
+- Post surplus food with quantity, pickup deadline, location, allergens, and handling notes.
+- Claim a listing, receive a demo pickup code, and record that the handoff happened.
+- Remove expired user-created listings and keep track of claimed pickups.
+- Use the responsive interface on mobile and desktop.
 
-1. A donor posts surplus food, quantity, pickup deadline, location, allergens, and handling notes.
-2. A community recipient claims what it can collect and distribute.
-3. The claimant confirms the handoff with a pickup code, closing the loop.
+## Data transparency
 
-## Demo
+The five starter listings, map pins, rescued-meal and kilogram totals, and other community figures are **illustrative sample data**. The "available now" figure combines seven illustrative listings with user-created listings. They do not represent verified donations or measured impact. Posting, claiming, and handoff confirmation work only in the current browser. Pickup codes are demonstration codes, not secure authentication.
 
-Open `index.html` in a modern browser. The prototype includes sample nearby listings, category filters, post listing, claim pickup, pickup confirmation, and a local impact summary. Posts and rescues are saved in the browser with `localStorage`.
+This prototype is not connected to real donors, recipients, maps, notifications, identity verification, or food-safety inspection. It does not determine whether food is safe. Donors and recipients need to follow applicable local food-handling rules and make their own safety decisions.
 
-**Important:** The sample listings, map pins, and community impact totals are illustrative demo data. The app is not connected to real donors, recipients, maps, notifications, or food-safety verification. A real pilot needs local food-safety guidance, trusted recipient onboarding, donor/recipient contact and pickup coordination, and actual measurement of completed handoffs.
+## Product flow
+
+1. A donor posts food, quantity, a pickup deadline, a public pickup location, and handling notes.
+2. A community recipient claims only what they can collect and distribute.
+3. The recipient shows the pickup code to the donor at handoff and records completion.
+
+## What a real pilot needs
+
+Before serving real people, add a shared backend and database; authenticated donor and recipient accounts; server-side claim and expiry transactions; secure, donor-verified handoff codes; contact and notification delivery; map/geocoding with location privacy; moderation and reporting; and an agreed local food-safety and incident process. Recruit a small set of known food donors and community organizations, run a supervised pilot, and measure completed handoffs rather than estimated meals.
 
 ## Hackathon pitch
 
-> Last Tray helps edible surplus food reach community groups before its pickup window closes. It coordinates the donor, the recipient, and the pickup—and records whether the handoff actually happened.
+> Last Tray helps edible surplus food reach community groups before its pickup window closes. It coordinates the donor, the recipient, and the pickup—and records whether the handoff happened.
 
 ## Suggested live demo
 
-1. Open **Project overview** and introduce the three roles.
-2. Post a surplus food listing with a pickup deadline and handling notes.
-3. Claim a sample or newly posted listing as a community group.
-4. Open **My rescues** and confirm the pickup.
-5. Show the status change and explain that impact data is sample data in this prototype.
+1. Explain the donor, recipient, and handoff steps.
+2. Post a sample listing with a future pickup deadline and clear handling notes.
+3. Claim the listing as a community group.
+4. Open **My rescues**, show the pickup code, and confirm the handoff.
+5. Point out which listings and impact figures are sample data.
 
-## Before submitting
-
-Check the hackathon's rules for team eligibility, required repository or hosted URL, judging criteria, use of AI tools, and submission deadline. If possible, speak with one food donor and one community food organization, then include what you learned and what you'd change. Avoid presenting demo statistics as real impact.
+For a real submission, verify the event's rules, eligibility, deadline, judging criteria, hosting requirements, and disclosure requirements for AI-assisted work. Do not present the sample figures as real impact.
