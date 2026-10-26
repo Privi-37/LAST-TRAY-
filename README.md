@@ -22,10 +22,6 @@ This prototype is not connected to real donors, recipients, maps, notifications,
 1. A donor posts food, quantity, a pickup deadline, a public pickup location, and handling notes.
 2. A community recipient claims only what they can collect and distribute.
 3. The recipient shows the pickup code to the donor at handoff and records completion.
-
-
-
 4. Open **My rescues**, show the pickup code, and confirm the handoff.
 5. Point out which listings and impact figures are sample data.
 
-For a real submission, verify the event's rules, eligibility, deadline, judging criteria, hosting requirements, and disclosure requirements for AI-assisted work. Do not present the sample figures as real impact.
